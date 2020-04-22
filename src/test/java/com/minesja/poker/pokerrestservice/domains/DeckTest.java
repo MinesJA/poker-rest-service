@@ -13,7 +13,7 @@ import static java.util.stream.Collectors.toList;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
-class DeckTest {
+public class DeckTest {
 
     @Test
     public void testDeckInit() {
