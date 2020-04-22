@@ -3,6 +3,7 @@ package com.minesja.poker.pokerrestservice.domains;
 import com.minesja.poker.pokerrestservice.utils.Rank;
 import com.minesja.poker.pokerrestservice.utils.Suit;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Card {
@@ -14,7 +15,7 @@ public class Card {
         this.rank = rank;
     }
 
-//    public static Comparator<Card> RANK_ORDER = Comparator.comparingInt(c -> c.rank.score);
+    public static Comparator<Card> RANK_ORDER = Comparator.comparingInt(c -> c.rank.score);
 
     @Override
     public int hashCode() {

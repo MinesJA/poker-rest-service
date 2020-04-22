@@ -1,5 +1,9 @@
 package com.minesja.poker.pokerrestservice.utils;
 
+import com.minesja.poker.pokerrestservice.domains.Card;
+
+import java.util.List;
+
 public enum Hand {
 
     ROYAL_FLUSH("Royal flush", "A, K, Q, J, 10, all the same suit.", 10), // 5 of same suit
