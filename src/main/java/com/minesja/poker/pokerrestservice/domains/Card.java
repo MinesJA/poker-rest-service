@@ -17,6 +17,14 @@ public class Card {
 
     public static Comparator<Card> RANK_ORDER = Comparator.comparingInt(c -> c.rank.score);
 
+    public Suit getSuit(){
+        return suit;
+    }
+
+    public Rank getRank(){
+        return rank;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(suit, rank);

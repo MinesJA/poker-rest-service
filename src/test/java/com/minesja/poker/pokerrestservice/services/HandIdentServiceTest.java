@@ -1,27 +1,26 @@
 package com.minesja.poker.pokerrestservice.services;
 
 import com.minesja.poker.pokerrestservice.domains.Card;
-import com.minesja.poker.pokerrestservice.utils.Hand;
+import com.minesja.poker.pokerrestservice.utils.MetaHand;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static com.minesja.poker.pokerrestservice.utils.Hand.FLUSH;
+import static com.minesja.poker.pokerrestservice.utils.MetaHand.FLUSH;
 import static com.minesja.poker.pokerrestservice.utils.Rank.*;
 import static com.minesja.poker.pokerrestservice.utils.Suit.*;
 import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.*;
 
-public class HandServiceTest {
+public class HandIdentServiceTest {
 
 
-    private HandService handIdent;
+    private IdentificationService handIdent;
 
     @Before
     public void init() {
-        handIdent = new HandService();
+        handIdent = new IdentificationService();
     }
 
 
@@ -38,7 +37,7 @@ public class HandServiceTest {
                 new Card(SPADES, ACE)
         );
 
-        Hand identified = handIdent.identifyHand(hand);
+        MetaHand identified = handIdent.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
     }
@@ -56,7 +55,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
     }
@@ -75,7 +74,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 
@@ -95,7 +94,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 
@@ -115,7 +114,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 
@@ -135,7 +134,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 
@@ -155,7 +154,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 
@@ -175,7 +174,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 
@@ -195,7 +194,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 
@@ -215,7 +214,7 @@ public class HandServiceTest {
                 new Card(CLUBS, TWO)
         );
 
-        Hand identified = handIdentification.identifyHand(hand);
+        MetaHand identified = handIdentification.identifyHand(hand);
 
         assertEquals(FLUSH, identified);
 

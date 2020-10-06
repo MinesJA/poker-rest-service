@@ -1,10 +1,7 @@
 package com.minesja.poker.pokerrestservice.utils;
 
-import com.minesja.poker.pokerrestservice.domains.Card;
 
-import java.util.List;
-
-public enum Hand {
+public enum MetaHand {
 
     ROYAL_FLUSH("Royal flush", "A, K, Q, J, 10, all the same suit.", 10), // 5 of same suit
     STRAIGHT_FLUSH("Straight flush", "Five cards in a sequence, all in the same suit.", 9), // 5 of same suit
@@ -21,7 +18,7 @@ public enum Hand {
     public final String description;
     public final int score;
 
-    Hand(String name, String description, int score) {
+    MetaHand(String name, String description, int score) {
         this.name = name;
         this.description = description;
         this.score = score;
